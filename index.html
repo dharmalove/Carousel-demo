@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无缝轮播</title>
+</head>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<style>
+    .images{
+        display: flex;
+        align-items: flex-start;
+        transition: all 0.5s;
+    }
+    .images > img{
+        vertical-align: top;
+    }
+    .window{
+        width: 640px;
+        overflow: hidden;
+        margin: 50px auto;
+    }
+    #buttons{
+        width: 640px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #buttons > span{
+        display: inline-block;
+        margin: 0 10px;
+        width: 20px;
+        height: 20px;
+        border: solid 1px #000000;
+        text-align: center;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div class="window">
+        <div id="images" class="images">
+            <img src="//i.loli.net/2020/01/19/pMoL52ZYUVHqBrW.gif" alt="image1" width=640>
+            <img src="//i.loli.net/2020/01/19/badWgJDcu3FChZB.gif" alt="image2" width=640>
+            <img src="//i.loli.net/2020/01/19/Oxdrk1GZoUFYwtq.gif" alt="image3" width=640>
+            <img src="//i.loli.net/2020/01/19/u9O3AM21vrF7daf.gif" alt="image4" width=640>
+        </div>
+    </div>
+    <div id="buttons">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
