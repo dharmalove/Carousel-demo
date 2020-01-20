@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,44 @@
 </head>
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <style>
-    .images{
+    .images {
         display: flex;
         align-items: flex-start;
         transition: all 0.5s;
     }
-    .images > img{
+
+    .images>img {
         vertical-align: top;
     }
-    .window{
+
+    .window {
         width: 640px;
         overflow: hidden;
-        margin: 50px auto;
+        margin: 50px auto 10px;
     }
-    #buttons{
+
+    #buttons {
         width: 640px;
-        margin: 10px auto;
+        margin: 0px auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #buttons > span{
+
+    #buttons>span {
         display: inline-block;
         margin: 0 10px;
-        width: 20px;
-        height: 20px;
-        border: solid 1px #000000;
-        text-align: center;
+        width: 14px;
+        height: 14px;
+        background: #dddddd;
         border-radius: 50%;
     }
+
+    #buttons>span.active {
+        background: #ff4500;
+    }
 </style>
+
 <body>
     <div class="window">
         <div id="images" class="images">
@@ -48,11 +57,15 @@
         </div>
     </div>
     <div id="buttons">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
+
+    
+
 </body>
 <script src="./main.js"></script>
+
 </html>
